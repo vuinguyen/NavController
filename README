@@ -1,9 +1,20 @@
-Welcome to your Appcelerator Titanium Mobile Project
+This is my 2013 update on the Ti-Navigation-Controller, originally written by Kevin Whinnery, and
+updated by scores of people since. I borrowed heavily from 
+Mike at github account, xsaero00 (https://github.com/xsaero00/Ti-Navigation-Controller) for this version; 
+Thanks, Mike!
 
-This is a blank project.  Start by editing your application's app.js to 
-make your first mobile project using Titanium.
+For this, I mainly used module.exports instead of exports (personal preferrance), and added a check in
+the NavigationController's open function to prevent the app from crashing when too many windows
+would get popped off the stack prematurely (which would happen if you dropped the NavigationController
+into an app that had Master-Detail views several layers deep).
 
+As this is an open source project, I may not have time to update this often. 
+But please feel free to fork from this project and make your own improvements. 
+If you do so, I'd love to hear from you (and so would the rest of my blog readers, as
+this would help everyone! :) )
 
+Please add your comments to my blog at: 
+http://sunfishempire.wordpress.com/2012/06/02/complex-navigation-titanium-part1/
 
 ----------------------------------
 Stuff our legal folk make us say:
